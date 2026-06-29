@@ -2,7 +2,7 @@ const http = require("http");
 const fs = require("fs");
 const { randomBytes } = require("crypto");
 
-const PORT = process.env.PORT || 3007;
+const PORT = process.env.PORT || 10000;
 const ADMIN_SECRET = process.env.ADMIN_SECRET || randomBytes(16).toString("hex");
 const LICENSES_FILE = process.env.LICENSES_FILE || "licenses.json";
 
